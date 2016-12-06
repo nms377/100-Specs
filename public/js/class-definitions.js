@@ -224,6 +224,12 @@ DNA = ['nucleatides', 'guanine', 'adenine', 'thymine', 'cytosine'];
  *
  */
 
+laptopCosts = {
+	MacBook: 1500,
+	Alienware: 2500,
+	HP: 499,
+	Surface: 320
+};
 
 /* Step 17
  *
@@ -240,6 +246,7 @@ DNA = ['nucleatides', 'guanine', 'adenine', 'thymine', 'cytosine'];
  *
  */
 
+livingOrganismClassification = ['Kingdom', 'Phylum', 'Class', 'Order', 'Family', 'Genus', 'Species'];
 
 /* Step 18
  *
