@@ -101,6 +101,12 @@ gender = {
  *
  */
 
+princess_leia = {
+	name: 'Leia Organa',
+	money: 890,
+	age: 20,
+	gender: gender.female
+};
 
 /* Step 11
  *
