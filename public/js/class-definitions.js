@@ -82,6 +82,11 @@ var club_name = 'Fight Club';
  *   unknown => undefined
  */
 
+gender = {
+	female: 'female',
+	male: 'male',
+	unknown: undefined
+};
 
 /* Step 10
  *
