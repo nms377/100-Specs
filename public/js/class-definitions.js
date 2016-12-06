@@ -261,6 +261,7 @@ livingOrganismClassification = ['Kingdom', 'Phylum', 'Class', 'Order', 'Family',
  *
  */
 
+scmList = ['git', 'svn', 'mercurial', 'bazaar', 'cvs'];
 
 /* Step 19
  *
