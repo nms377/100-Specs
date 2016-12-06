@@ -398,6 +398,26 @@ function browseURL(browser){
  *
  */
 
+/* I want to use this code. It lists the elements, but I don't know how to attach it as an HTML
+
+function listLivinvOrgClass(){
+ 	var unLi = document.createElement('ul');
+ 	var list = document.createElement('li').innerHTML = livingOrganismClassification.forEach(function(li){
+ 		console.log(li);
+ 	});
+ 	unLi.appendChild(list);
+ }*/
+
+function listLivingOrgClass() {
+ 
+   var ul = document.createElement('ul');
+ 
+   for (var i =0; i < livingOrganismClassification.length; i++){
+     ul.appendChild(document.createElement('li')).innerHTML = livingOrganismClassification[i];
+   }
+   return ul.outerHTML;
+ 
+ }
 
 /* Step 26
  *
