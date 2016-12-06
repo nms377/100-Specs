@@ -23,6 +23,7 @@ var videogame_system = 'Atari';
  *
  */
 
+var sahara_animal = 'The Addax';
 
 /* Step 4
  *
