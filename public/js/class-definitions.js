@@ -1452,8 +1452,8 @@ var polygon = new Shape(Math.infinity).getType();
  * and assign the values to each variable below.
  *
  */
-var openAClosedBox;
-var closeAnOpenBox;
+var openAClosedBox = new Box('foods', false).openBox();
+var closeAnOpenBox = new Box('foods', true).openBox();
 
 
  /* Step 95
