@@ -1142,7 +1142,7 @@ class Cookie{
 
 class Meal{
 	constructor(foods){
-		this.foods = [];
+		this.foods = foods;
 	}
 }
 
@@ -1189,7 +1189,7 @@ var chocolateChip = new Cookie('chocolate');
 var gingerbread = new Cookie('gingerbread');
 
 // Create 2 different meals
-var breakfast;
+var breakfast = new Meal(['cereal', 'milk']);
 var dinner;
 
 
