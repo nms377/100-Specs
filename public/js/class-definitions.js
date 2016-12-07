@@ -721,6 +721,18 @@ marries(person){
  *
  */
 
+function Stapler(color, maxPapers){
+	this.color = color;
+	this.maxPapers = maxPapers;
+}
+
+Stapler.prototype.staplePapers = function(papers){
+	if(papers <= this.maxPapers){
+		return true;
+	}else{
+		return false;
+	}
+};
 
 /* Step 35
  *
