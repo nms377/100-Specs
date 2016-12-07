@@ -773,6 +773,39 @@ Stapler.prototype.staplePapers = function(papers){
  *
  */
 
+class Scientist extends Person{
+	constructor(name, money, age, gender, disciplines, discoveries){
+		super(name, money, age, gender);
+		this.disciplines = [];
+		this.discoveries = [];
+	}
+
+	addDiscipline(disciplines){
+		return this.disciplines.push(disciplines);
+	}
+
+	checkDiscipline(disciplines){
+		if(this.disciplines.indexOf(disciplines)  <= -1){
+			return false;
+		}else{
+			return true;
+		}
+	}
+
+	addDiscovery(discoveries){
+		this.discoveries.push(discoveries);
+		for(var i=0; i<this.discoveries.length; i++){
+			if(this.discoveries.length === 1){
+				return `I discovered ${this.discoveries[i]}.`;
+			}else if(this.discoveries.length === 2){
+				return `I discovered ${this.discoveries[0]} and ${this.discoveries[1]}.`;
+			}else if(this.discoveries.length === 3){
+				return `I discovered ${this.discoveries[0]}, ${this.discoveries[1]}, and ${this.discoveries[2]}.`;
+			}
+		}
+	}
+
+}
 
 /* Step 36
  *
