@@ -1421,9 +1421,9 @@ Meal.prototype.containsJunkFood = function(){
  * and assign the values to each variable below.
  *
  */
-var warmBloodedAnimal;
-var coldBloodedAnimal;
-var notWarmOrColdAnimal;
+var warmBloodedAnimal = new Animal('Monkey', 'male').isWarmBlooded();
+var coldBloodedAnimal = new Animal('Fish', 'male').isWarmBlooded();
+var notWarmOrColdAnimal = new Animal('Platypus', 'male').isWarmBlooded();
 
 
 /* Step 92
@@ -1432,8 +1432,8 @@ var notWarmOrColdAnimal;
  * and assign the values to each variable below.
  *
  */
-var streetDriving;
-var forwardDriving;
+var streetDriving  = new Vehicle('Honda', 'Accord').drive('Oaniani Street');
+var forwardDriving = new Vehicle('Toyota', 'Camry').drive();
 
 
  /* Step 93
