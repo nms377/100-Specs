@@ -1442,8 +1442,8 @@ var forwardDriving = new Vehicle('Toyota', 'Camry').drive();
  * and assign the values to each variable below.
  *
  */
-var decagon;
-var polygon;
+var decagon = new Shape(10).getType();
+var polygon = new Shape(Math.infinity).getType();
 
 
 /* Step 94
