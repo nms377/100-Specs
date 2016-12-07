@@ -1309,6 +1309,15 @@ Box.prototype.openBox = function(){
  *
  */
 
+Door.prototype.openClose = function(){
+	if(this.isOpen === false){
+		this.isOpen = true;
+		return true;
+	}else if(this.isOpen === true){
+		this.isOpen = false;
+		return false;
+	}
+};
 
 /* Step 86
  *
