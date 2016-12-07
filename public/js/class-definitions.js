@@ -828,6 +828,14 @@ class Scientist extends Person{
  *
  */
 
+function BankAccount(){
+	this.balance = balance;
+	this.owner = owner;
+}
+
+BankAccount.prototype.withdraw = function(account){
+	return account + this.balance;
+};
 
 /* Step 37
  *
@@ -1001,6 +1009,12 @@ class Scientist extends Person{
  * @param {string} gender  male or female
  */
 
+class Animal{
+	constructor(species, gender){
+		this.species = species;
+		this.gender = gender;
+	}
+}
 
 /**
  * Step 51
