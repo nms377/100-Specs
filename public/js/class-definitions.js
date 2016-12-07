@@ -1024,6 +1024,12 @@ class Animal{
  * @param {string} model The vehicle's model
  */
 
+class Vehicle{
+	constructor(make, model){
+		this.make = make;
+		this.model = model;
+	}
+}
 
 /**
  * Step 52
