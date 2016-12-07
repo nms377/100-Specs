@@ -1399,13 +1399,11 @@ Cookie.prototype.swipedByCookieMonster = function(dayOfTheWeek){
 
 Meal.prototype.containsJunkFood = function(){
 	let junkFood = ['chips', 'soda', 'ice cream', 'popcorn', 'candy'];
-	for(var i=0; i<junkFood.length; i++){
+	for(let i=0; i<junkFood.length; i++){
 		if(this.foods.indexOf(junkFood[i]) > -1){
 			return true;
-		}else{
-			return false;
 		}
-	}
+	}	return false;
 };
 
  /* Steps 91 to 100
@@ -1512,5 +1510,5 @@ var cookieMonsterBlocked = new Cookie('chocolate').swipedByCookieMonster();
  * and assign the values to each variable below.
  *
  */
-var badForYou;
-var goodForYou;
+var badForYou = new Meal(['candy', 'ice cream', 'salad', 'chicken']).containsJunkFood();
+var goodForYou = new Meal(['chicken', 'salad']).containsJunkFood();
