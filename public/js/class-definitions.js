@@ -472,6 +472,23 @@ function favoritePlanet(currentPlanet){
  *
  */
 
+class Person{
+	constructor(name, money, age, gender){
+		this.name = name;
+		this.money = money;
+		this.age = age;
+		this.gender = gender;
+	}
+
+	spendMoney(spend){
+		return this.money -= spend;
+	}
+
+	earnMoney(earn){
+		return this.money += earn;
+	}
+}
+
 
 /* Step 28
  *
